@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   post "tasks", to: "tasks#create" # CREATE - step 2.
   get "tasks/:id/edit", to: "tasks#edit", as: :edit # Update - Step 1, GET the form
   patch "tasks/:id", to: "tasks#update" # Update - Step 2, PATCH the form
-  
+  delete "tasks/:id", to: "tasks#destroy", as: :destroy
 end
